@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1207</width>
+    <height>915</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>50</y>
+      <width>231</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Haga doble clic en el cabaezado de un vértice para generar una matriz de pesos</string>
+    </property>
+    <property name="rowCount">
+     <number>4</number>
+    </property>
+    <property name="columnCount">
+     <number>4</number>
+    </property>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>49</number>
+    </attribute>
+    <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+   <widget class="QPushButton" name="btnPintarGrafo">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>250</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dibujar Grafo</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>310</y>
+      <width>751</width>
+      <height>491</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTtitulo">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>10</y>
+      <width>441</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color:rgb(0, 85, 255);</string>
+    </property>
+    <property name="text">
+     <string>Grafos por Nicolás Ospina</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTtitulo_3">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>120</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color:rgb(0, 85, 255);</string>
+    </property>
+    <property name="text">
+     <string>Matriz de Pesos:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTtitulo2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>330</y>
+      <width>181</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color:rgb(0, 85, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>logo_eafit_blanco.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMatriz3">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>400</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Matriz cúbica</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMatriz2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>50</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Matriz cuadrada</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tblMatriz2">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>140</y>
+      <width>231</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <property name="showGrid">
+     <bool>true</bool>
+    </property>
+    <property name="rowCount">
+     <number>4</number>
+    </property>
+    <property name="columnCount">
+     <number>4</number>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>50</number>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+   <widget class="QTableWidget" name="tblMatriz3">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>480</y>
+      <width>231</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <property name="showGrid">
+     <bool>true</bool>
+    </property>
+    <property name="rowCount">
+     <number>4</number>
+    </property>
+    <property name="columnCount">
+     <number>4</number>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>50</number>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+   <widget class="QTableWidget" name="tblMatriz">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>70</y>
+      <width>231</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <property name="showGrid">
+     <bool>true</bool>
+    </property>
+    <property name="rowCount">
+     <number>4</number>
+    </property>
+    <property name="columnCount">
+     <number>4</number>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>50</number>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+   <widget class="QLabel" name="lblAdyacencia">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>20</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color:rgb(0, 85, 255);</string>
+    </property>
+    <property name="text">
+     <string>Tabla de adyacencia</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblAdyacencia2">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>90</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color:rgb(0, 85, 255);</string>
+    </property>
+    <property name="text">
+     <string>Tabla de A^2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblAdyacencia3">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>440</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color:rgb(0, 85, 255);</string>
+    </property>
+    <property name="text">
+     <string>Tabla de A^3</string>
+    </property>
+   </widget>
+   <zorder>btnMatriz2</zorder>
+   <zorder>tableWidget</zorder>
+   <zorder>btnPintarGrafo</zorder>
+   <zorder>graphicsView</zorder>
+   <zorder>lblTtitulo</zorder>
+   <zorder>lblTtitulo_3</zorder>
+   <zorder>lblTtitulo2</zorder>
+   <zorder>btnMatriz3</zorder>
+   <zorder>tblMatriz2</zorder>
+   <zorder>tblMatriz3</zorder>
+   <zorder>tblMatriz</zorder>
+   <zorder>lblAdyacencia</zorder>
+   <zorder>lblAdyacencia2</zorder>
+   <zorder>lblAdyacencia3</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1207</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnPintarGrafo</sender>
+   <signal>clicked()</signal>
+   <receiver>btnMatriz2</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>445</x>
+     <y>306</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1009</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnMatriz2</sender>
+   <signal>clicked()</signal>
+   <receiver>tblMatriz2</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1054</x>
+     <y>86</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1049</x>
+     <y>226</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnMatriz3</sender>
+   <signal>clicked()</signal>
+   <receiver>tblMatriz3</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1039</x>
+     <y>446</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1053</x>
+     <y>594</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnMatriz2</sender>
+   <signal>clicked()</signal>
+   <receiver>btnMatriz3</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1071</x>
+     <y>86</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1010</x>
+     <y>446</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnPintarGrafo</sender>
+   <signal>clicked()</signal>
+   <receiver>tblMatriz2</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>424</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>931</x>
+     <y>237</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnPintarGrafo</sender>
+   <signal>clicked()</signal>
+   <receiver>btnMatriz3</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>444</x>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>978</x>
+     <y>446</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnPintarGrafo</sender>
+   <signal>clicked()</signal>
+   <receiver>tblMatriz3</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>404</x>
+     <y>281</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>914</x>
+     <y>583</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnPintarGrafo</sender>
+   <signal>clicked()</signal>
+   <receiver>tblMatriz</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>379</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>702</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnPintarGrafo</sender>
+   <signal>clicked()</signal>
+   <receiver>lblAdyacencia</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>459</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>685</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnPintarGrafo</sender>
+   <signal>clicked()</signal>
+   <receiver>lblAdyacencia2</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>367</x>
+     <y>289</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>970</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnPintarGrafo</sender>
+   <signal>clicked()</signal>
+   <receiver>lblAdyacencia3</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>396</x>
+     <y>286</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>954</x>
+     <y>483</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnMatriz2</sender>
+   <signal>clicked()</signal>
+   <receiver>lblAdyacencia2</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1070</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1082</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnMatriz3</sender>
+   <signal>clicked()</signal>
+   <receiver>lblAdyacencia3</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1031</x>
+     <y>430</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1032</x>
+     <y>477</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
